@@ -61,3 +61,9 @@ true
 iex(5)> Blockchain.valid?(blockchain)
 true
 ```
+
+## Running Tests
+
+```
+mix test
+```
