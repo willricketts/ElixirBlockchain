@@ -3,13 +3,14 @@ defmodule BlockTest do
   
   describe "new" do
     test "a newly returned block contains all relevant fields" do
-      genesis = Block.genesis
+      genesis = Blockchain.new |> hd
       new_block = Block.new("some data", genesis.hash)
       
-      assert new_block.data != nil
-      # Not yet implemented
-      # assert new_block.hash != nil
-      # assert new_block.prev_hash == genesis.hash
+      IO.inspect new_block
+      assert Block.valid?(new_block) == false
+      assert new_block.hash == nil
+      assert new_block.prev_hash != nil
+      
     end
   end
 
