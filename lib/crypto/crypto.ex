@@ -2,7 +2,7 @@ defmodule Crypto do
   @hash_fields [:data, :timestamp, :prev_hash]
 
   @doc """
-  Creates a hash for the new block    
+  Creates a hash for the new block
   """
   def hash(%{} = block) do
     block
