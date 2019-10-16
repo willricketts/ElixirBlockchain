@@ -1,4 +1,4 @@
-# Simple Elixir Blockchain ![](https://travis-ci.org/willricketts/ElixirBlockchain.svg?branch=master)
+# Simple Elixir Blockchain [![Build Status](https://travis-ci.org/willricketts/ElixirBlockchain.svg?branch=master)](https://travis-ci.org/willricketts/ElixirBlockchain)
 
 ## Installation
 
