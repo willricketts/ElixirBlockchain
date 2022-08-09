@@ -6,7 +6,6 @@ defmodule BlockTest do
       genesis = Blockchain.new |> hd
       new_block = Block.new("some data", genesis.hash)
       
-      IO.inspect new_block
       assert Block.valid?(new_block) == false
       assert new_block.hash == nil
       assert new_block.prev_hash != nil
